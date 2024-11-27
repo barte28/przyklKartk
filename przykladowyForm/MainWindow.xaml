@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <TabControl>
+        
         <TabItem Header="obwod figury">
             <StackPanel>
                 <TextBlock>Podaj bok figury</TextBlock>
@@ -20,9 +21,20 @@
                 <Button Click="Button_Click">Oblicz</Button>
             </StackPanel>
         </TabItem>
+        
         <TabItem Header="kalkulator walut">
+            <StackPanel>
+                <TextBlock>Podaj ile waluty</TextBlock>
+                <TextBox x:Name="waluta_textbox"></TextBox>
+                <TextBlock>Wybierz na co przeliczyć</TextBlock>
+                <RadioButton GroupName="waluta_radio" x:Name="euro_button" IsChecked="True">Euro</RadioButton>
+                <RadioButton GroupName="waluta_radio" x:Name="frank_button">Frank</RadioButton>
+                <RadioButton GroupName="waluta_radio" x:Name="dolar_button">Dolar</RadioButton>
+                <Button>Przelicz walutę</Button>
+            </StackPanel>
             
         </TabItem>
+        
     </TabControl>
 
 </Window>
