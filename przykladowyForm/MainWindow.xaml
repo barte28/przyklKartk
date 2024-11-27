@@ -6,15 +6,23 @@
         xmlns:local="clr-namespace:przykladowyForm"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
-        <TextBlock>Podaj bok figury</TextBlock>
-        <TextBox x:Name="bok_textbox"></TextBox>
-        <TextBlock>Wybierz figure</TextBlock>
-        <ComboBox x:Name="figura_ComboBox" SelectedIndex="0">
-            <ComboBoxItem>Kwadrat</ComboBoxItem>
-            <ComboBoxItem>Trójkąt prostokątny</ComboBoxItem>
-            <ComboBoxItem>Pięciokąt</ComboBoxItem>
-        </ComboBox>
-        <Button Click="Button_Click">Oblicz</Button>
-    </StackPanel>
+    <TabControl>
+        <TabItem Header="obwod figury">
+            <StackPanel>
+                <TextBlock>Podaj bok figury</TextBlock>
+                <TextBox x:Name="bok_textbox"></TextBox>
+                <TextBlock>Wybierz figure</TextBlock>
+                <ComboBox x:Name="figura_ComboBox" SelectedIndex="0">
+                    <ComboBoxItem>Kwadrat</ComboBoxItem>
+                    <ComboBoxItem>Trójkąt prostokątny</ComboBoxItem>
+                    <ComboBoxItem>Pięciokąt</ComboBoxItem>
+                </ComboBox>
+                <Button Click="Button_Click">Oblicz</Button>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="kalkulator walut">
+            
+        </TabItem>
+    </TabControl>
+
 </Window>
