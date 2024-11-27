@@ -8,11 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
         <TextBlock>Podaj bok figury</TextBlock>
-        <TextBox></TextBox>
+        <TextBox x:Name="bok_textbox"></TextBox>
         <TextBlock>Wybierz figure</TextBlock>
-        <ComboBox x:Name="figuraComboBox" SelectedIndex="0">
-            <ComboBoxItem>kwadrat</ComboBoxItem>
-            <ComboBoxItem>trójkąt prostokątny</ComboBoxItem>
+        <ComboBox x:Name="figura_ComboBox" SelectedIndex="0">
+            <ComboBoxItem>Kwadrat</ComboBoxItem>
+            <ComboBoxItem>Trójkąt prostokątny</ComboBoxItem>
+            <ComboBoxItem>Pięciokąt</ComboBoxItem>
         </ComboBox>
+        <Button Click="Button_Click">Oblicz</Button>
     </StackPanel>
 </Window>
