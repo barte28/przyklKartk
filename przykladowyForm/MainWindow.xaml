@@ -34,6 +34,24 @@
             </StackPanel>
             
         </TabItem>
+
+        <TabItem Header="Kalkulator Temperatur">
+            <StackPanel>
+                <TextBlock>Podaj temp</TextBlock>
+                <TextBox x:Name="temp_textbox"></TextBox>
+                <RadioButton GroupName="temp1_radio" x:Name="celcjusz_radio">C</RadioButton>
+                <RadioButton GroupName="temp1_radio" x:Name="farenhajt_radio">F</RadioButton>
+                <RadioButton GroupName="temp1_radio" x:Name="kelwin_radio">K</RadioButton>
+                <Button Click="Button_Click_2">Przelicz</Button>
+                
+                <Separator></Separator>
+                
+                <RadioButton GroupName="temp2_radio" x:Name="celcjusz_radio">C</RadioButton>
+                <RadioButton GroupName="temp2_radio" x:Name="farenhajt_radio">F</RadioButton>
+                <RadioButton GroupName="temp2_radio" x:Name="kelwin_radio">K</RadioButton>
+            </StackPanel>
+            
+        </TabItem>
         
     </TabControl>
 

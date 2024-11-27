@@ -81,5 +81,10 @@ namespace przykladowyForm
                 MessageBox.Show("To nie jest liczba");
             }
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
