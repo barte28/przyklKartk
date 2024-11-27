@@ -54,5 +54,32 @@ namespace przykladowyForm
                 MessageBox.Show("To nie jest liczba");
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            float wynik = 0;
+            int waluta = 0;
+
+            if(int.TryParse(waluta_textbox.Text, out waluta))
+            {
+                if(euro_radio.IsChecked == true)
+                {
+                    wynik = (float)(waluta * 0.26);
+                }
+                else if(dolar_radio.IsChecked == true)
+                {
+                    wynik = (float)(waluta * 0.24);
+                }
+                else if(frank_radio.IsChecked == true)
+                {
+                    wynik = (float)(waluta * 0.22);
+                }
+                MessageBox.Show("Dostaniesz około " + wynik.ToString());
+            }
+            else
+            {
+                MessageBox.Show("To nie jest liczba");
+            }
+        }
     }
 }

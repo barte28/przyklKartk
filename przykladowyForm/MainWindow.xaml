@@ -27,10 +27,10 @@
                 <TextBlock>Podaj ile waluty</TextBlock>
                 <TextBox x:Name="waluta_textbox"></TextBox>
                 <TextBlock>Wybierz na co przeliczyć</TextBlock>
-                <RadioButton GroupName="waluta_radio" x:Name="euro_button" IsChecked="True">Euro</RadioButton>
-                <RadioButton GroupName="waluta_radio" x:Name="frank_button">Frank</RadioButton>
-                <RadioButton GroupName="waluta_radio" x:Name="dolar_button">Dolar</RadioButton>
-                <Button>Przelicz walutę</Button>
+                <RadioButton GroupName="waluta_radio" x:Name="euro_radio" IsChecked="True">Euro</RadioButton>
+                <RadioButton GroupName="waluta_radio" x:Name="frank_radio">Frank</RadioButton>
+                <RadioButton GroupName="waluta_radio" x:Name="dolar_radio">Dolar</RadioButton>
+                <Button Click="Button_Click_1">Przelicz walutę</Button>
             </StackPanel>
             
         </TabItem>
